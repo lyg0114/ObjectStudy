@@ -5,8 +5,9 @@ import java.math.BigDecimal;
 public class Money {
 
     public static final Money ZERO = Money.wons(0);
-
     private final BigDecimal amount;
+
+
 
 
     public Money(BigDecimal amount) {
@@ -33,4 +34,6 @@ public class Money {
     public boolean isGreaterThanOrEqual(Money other){
         return amount.compareTo(other.amount) >= 0;
     }
+
+
 }
